@@ -1,4 +1,4 @@
-export default function Account() {
+export default function Orders() {
   return (
     <div>
       <p>Hello!</p>
