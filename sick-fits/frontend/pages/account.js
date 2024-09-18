@@ -1,7 +1,7 @@
 export default function Account() {
   return (
     <div>
-      <p>Hello!</p>
+      <p>Hello I'm Account IndexPage!</p>
     </div>
   );
 }
