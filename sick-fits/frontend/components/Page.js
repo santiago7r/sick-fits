@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import Header from './Header';
 
 const GlobalStyles = createGlobalStyle`
@@ -43,13 +43,18 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
+const InnerStyles = styled.div`
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  paddin: 2rem;
+`;
+
 export default function Page({ children }) {
   return (
     <div>
       <GlobalStyles />
       <Header />
-      <h2>I'm the page component</h2>
-      {children}
+      <InnerStyles>{children}</InnerStyles>
     </div>
   );
 }
