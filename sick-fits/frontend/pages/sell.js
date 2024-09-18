@@ -1,3 +1,11 @@
+import Header from "../components/Header";
+
 export default function Sell() {
-  return <p>Hello I am the sell page!</p>;
+  return (
+    <>
+        <Header/>
+        <p>Hello I am the sell page!</p>
+    </>
+      
+) 
 }
