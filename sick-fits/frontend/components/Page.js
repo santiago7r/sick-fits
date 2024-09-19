@@ -6,7 +6,7 @@ import Header from './Header';
 const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'radnika_next';
-    src: url('static/radnikanext-medium-webfont.woff2');
+    src: url('static/radnikanext-medium-webfont.woff2')
     format('woff2');
     font-weight: normal;
     font-style: normal;
@@ -46,7 +46,7 @@ const GlobalStyles = createGlobalStyle`
 const InnerStyles = styled.div`
   max-width: var(--maxWidth);
   margin: 0 auto;
-  paddin: 2rem;
+  padding: 2rem;
 `;
 
 export default function Page({ children }) {
