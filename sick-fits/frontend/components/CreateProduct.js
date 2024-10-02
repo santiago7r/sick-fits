@@ -17,8 +17,12 @@ const CREATE_PRODUCT_MUTATION = gql`
         description: "Test",
         price: 100,
         status: "AVAILABLE"
-      }
-    )
+      } 
+    ) {
+      id
+      price
+      description
+    }
   }
 `;
 
