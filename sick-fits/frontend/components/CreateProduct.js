@@ -10,7 +10,16 @@ const CREATE_PRODUCT_MUTATION = gql`
     $description: String!
     $price: Int!
     $image: Upload
-  ) 
+  ){
+    createProduct(
+      data: {
+        name: "Sample Product",
+        description: "Test",
+        price: 100,
+        status: "AVAILABLE"
+      }
+    )
+  }
 `;
 
 export default function CreateProduct() {
