@@ -5,6 +5,11 @@ import gql from "graphql-tag";
 
 const CREATE_PRODUCT_MUTATION = gql`
   mutation CREATE_PRODUCT_MUTATION(
+    # Which variables are getting passed in? And what types are they
+    $name: String!
+    $description: String!
+    $price: Int!
+    $image: Upload
   ) 
 `;
 
