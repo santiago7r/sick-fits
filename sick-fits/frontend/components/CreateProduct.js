@@ -4,7 +4,7 @@ import Form from "./styles/Form"
 import gql from "graphql-tag";
 
 const CREATE_PRODUCT_MUTATION = gql`
-  mutation (
+  mutation CREATE_PRODUCT_MUTATION(
   ) 
 `;
 
