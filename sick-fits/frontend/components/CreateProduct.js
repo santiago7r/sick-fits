@@ -2,6 +2,7 @@ import { useState } from "react";
 import useForm from "../lib/useForm";
 import Form from "./styles/Form"
 import gql from "graphql-tag";
+import { useMutation } from "@apollo/client";
 
 const CREATE_PRODUCT_MUTATION = gql`
   mutation CREATE_PRODUCT_MUTATION(
@@ -35,14 +36,24 @@ export default function CreateProduct() {
     price: 34234,
     description: 'These are the best shoes!'
   });
+  const [createProduct, { loading, error, data }] = useMutation(
+    CREATE_PRODUCT_MUTATION,
+    {
+      variables: inputs,
+    }
+  );
+  console.log(createProduct);
   return (
     <Form onSubmit={
-      e => {
+      async e => {
         e.preventDefault()
         console.log(inputs)
+        // Submit the inputfields to the backend:
+        const res = await createProduct();
+        console.log(res);
       }
     }>
-      <fieldset>
+      <fieldset disabled={loading} aria-busy={loading}>
         <label htmlFor="image">
           Image
           <input
