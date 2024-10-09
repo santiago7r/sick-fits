@@ -13,15 +13,17 @@ const CREATE_PRODUCT_MUTATION = gql`
   ){
     createProduct(
       data: {
-        name: "Sample Product",
-        description: "Test",
-        price: 100,
+        name: $name,
+        description: $description,
+        price: $price,
         status: "AVAILABLE"
+        photo: { create: { image: $image, altText: $name } }
       } 
     ) {
       id
       price
       description
+      name
     }
   }
 `;
