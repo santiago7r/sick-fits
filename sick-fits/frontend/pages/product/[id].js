@@ -16,6 +16,9 @@ const SINGLE_ITEM_QUERY = gql`
 
 export default function SingleProduct({ query }) {
   const { data, loading, error } = useQuery(SINGLE_ITEM_QUERY);
+
+  console.log({data, loading, error}); 
+  
   return (
     <p>
       This is a single product {query.id}
