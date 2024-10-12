@@ -78,3 +78,17 @@ CLOUDINARY_NAME=<Your Cloudinary Account Name>
 # Frontend
 NEXT_PUBLIC_GRAPHQL_ENDPOINT=http://localhost:4000/graphql
 ```
+
+## Testing
+
+The project includes comprehensive testing, covering both the frontend and backend. To run the tests, use the following command:
+
+```bash
+npm run test
+```
+
+The testing section covers the following topics:
+
+- Unit testing with **Jest**
+- Integration testing
+- End-to-end testing with **Cypress**
