@@ -63,4 +63,18 @@ Before you begin, make sure you have the following installed on your machine:
 
 4. **Access the application**:
 
-   Navigate to `http://localhost:3000` to view the application in the browser.
+   Navigate to `http://localhost:3000` to view the application in the browser.### Environment Variables
+
+Make sure to set up your `.env` file with the following environment variables:
+
+```bash
+# Backend
+DATABASE_URL=<Your Database URL>
+FRONTEND_URL=http://localhost:3000
+CLOUDINARY_API_KEY=<Your Cloudinary API Key>
+CLOUDINARY_API_SECRET=<Your Cloudinary API Secret>
+CLOUDINARY_NAME=<Your Cloudinary Account Name>
+
+# Frontend
+NEXT_PUBLIC_GRAPHQL_ENDPOINT=http://localhost:4000/graphql
+```
