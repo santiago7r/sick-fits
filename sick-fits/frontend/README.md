@@ -92,3 +92,30 @@ The testing section covers the following topics:
 - Unit testing with **Jest**
 - Integration testing
 - End-to-end testing with **Cypress**
+
+## Folder Structure
+
+```bash
+sick-fits/
+│
+├── backend/          # Backend code (GraphQL API with Node.js)
+│   ├── prisma/       # Database schema and migrations
+│   └── src/          # Main source code for GraphQL API
+│
+├── frontend/         # Frontend code (React.js and Apollo Client)
+│   ├── components/   # Reusable React components
+│   ├── pages/        # Next.js pages
+│   └── styles/       # Global styles and CSS modules
+│
+└── tests/            # Testing configuration and test files
+```
+
+## Additional Resources
+
+- **GraphQL Documentation**: Learn more about how to work with GraphQL [here](https://graphql.org/).
+- **Apollo Client**: Get familiar with Apollo Client for efficient GraphQL data fetching [here](https://www.apollographql.com/docs/react/).
+- **Next.js**: This project uses Next.js for server-side rendering and routing. Learn more about it [here](https://nextjs.org/).
+
+## License
+
+This project is licensed under the MIT License. Feel free to use the code and resources for your own projects or as a learning resource.
