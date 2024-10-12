@@ -17,3 +17,50 @@ In this project, you will learn to create an online store called **Sick Fits**, 
 - **File Upload**: Uploading images such as product photos with cloud storage.
 - **Caching**: Efficient data caching with Apollo Client to minimize redundant data fetching.
 - **Testing**: Comprehensive test coverage with nearly six hours of dedicated testing content to ensure the robustness of your application.
+
+## Project Setup
+
+### Prerequisites
+
+Before you begin, make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+- A code editor (such as [Visual Studio Code](https://code.visualstudio.com/))
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/sick-fits.git
+   cd sick-fits
+   ```
+
+2. **Install dependencies for both frontend and backend:**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development servers:**
+
+   For the backend (GraphQL API):
+
+   ```bash
+   cd backend
+   npm run dev
+   ```
+
+   For the frontend (React & Apollo):
+
+   ```bash
+   cd frontend
+   npm run dev
+   ```
+
+4. **Access the application**:
+
+   Navigate to `http://localhost:3000` to view the application in the browser.
