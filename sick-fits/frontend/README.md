@@ -109,13 +109,3 @@ sick-fits/
 │
 └── tests/            # Testing configuration and test files
 ```
-
-## Additional Resources
-
-- **GraphQL Documentation**: Learn more about how to work with GraphQL [here](https://graphql.org/).
-- **Apollo Client**: Get familiar with Apollo Client for efficient GraphQL data fetching [here](https://www.apollographql.com/docs/react/).
-- **Next.js**: This project uses Next.js for server-side rendering and routing. Learn more about it [here](https://nextjs.org/).
-
-## License
-
-This project is licensed under the MIT License. Feel free to use the code and resources for your own projects or as a learning resource.
