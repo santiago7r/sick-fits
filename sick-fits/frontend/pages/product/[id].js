@@ -1,5 +1,3 @@
-import { useQuery } from '@apollo/client'
-import gql from 'graphql-tag';
 import React from 'react'
 import SingleProduct from '../../components/SingleProduct';
 
