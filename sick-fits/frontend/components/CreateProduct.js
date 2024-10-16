@@ -1,4 +1,3 @@
-import { useState } from "react";
 import useForm from "../lib/useForm";
 import Form from "./styles/Form"
 import gql from "graphql-tag";
